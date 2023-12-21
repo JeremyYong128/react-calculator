@@ -165,7 +165,7 @@ function formatOperand(operand) {
 
 function App() {
   const [{ currentOperand, previousOperand, operation, prevClick }, dispatch] = useReducer(reducer, {currentOperand: "0"})
-  
+  prevClick = prevClick
   return (
     <div className="calculator-grid">
       <div className="output">
